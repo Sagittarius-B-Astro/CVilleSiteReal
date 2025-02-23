@@ -1,6 +1,6 @@
 body { 
     margin: 0;
-    font-family: Garamond;
+    font-family: "Fredoka";
 }   
 
 .bannerlink {
@@ -29,7 +29,7 @@ body {
 }
 
 .top-container {
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 30px 30px;
     text-align: center;
 }
@@ -62,7 +62,8 @@ body {
 }
 
 .vendorbox {
-    background-color: sienna;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(165, 160, 158);
     width: 33%;
     margin: 0px auto;
     padding: 0px;
@@ -81,39 +82,64 @@ img {
     border: 3px solid black;
 }
 
-.venderbox:hover {
+.vendorbox:hover {
     opacity: 0.7;
 }
 
+.vendor-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 .vendorinfo {
-    background-color: darksalmon;
+    background-color: rgb(183, 183, 183);
     width: 100%;
-    color: brown;
     text-align: left;
-    height: 100px;
+    height: auto;
     padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     border-radius: 5px;
 }
 
 .vendortitle {
     font-size: 20px;
     font-weight: bold;
-    background-color: burlywood;
+    background-color: rgb(183, 183, 183);
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.vendor-details {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+.vendorcategory, .vendordescription {
+    font-size: 16px;
+    background-color: rgb(183, 183, 183);
     padding: 5px;
     border-radius: 5px;
+    text-align: center;
+}
+
+.vendorcategory {
+    flex: 40%;
 }
 
 .vendordescription {
-    font-size: 16px;
-    background-color: antiquewhite;
-    padding: 5px;
-    border-radius: 5px;
+    flex: 60%;
 }
 
 .leftSideBar {
@@ -131,14 +157,14 @@ img {
     width: 350px;
     height: 100%;
     padding: 200px;
-    background-color: sienna;
+    background-color: rgb(188, 187, 187);
     position: absolute;
     padding: 20px;
     
 }
 .sticky {
-    position: fixed; /* Becomes fixed when scrolled */
-    top: 9.5%; /* Sticks to top */
+    position: fixed;
+    top: 9.5%;
 }
 
 .radiusBox {
@@ -162,3 +188,44 @@ img {
     background-color: white;
     flex-direction: column;
 }
+
+.spotlight {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    border: 3px solid black;
+    gap: 20px;
+}
+
+.spotpic, .spotdescription {
+    font-size: 16px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 50%;
+}
+
+.spotdescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 60%;
+}
+
+.spotdescription h1, p {
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    width: 100%
+}
+
+.spotdescription h2 {
+    color: grey;
+    margin-bottom: 10px;
+}
+
+
