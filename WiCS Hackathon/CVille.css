@@ -98,3 +98,50 @@ img {
     padding: 5px;
     border-radius: 5px;
 }
+
+.leftSideBar {
+    top: 28.6%;
+    left: 0;
+    height: 100%;
+    padding: 200px;
+    background-color: none;
+    position: absolute;
+}
+
+.rightSideBar {
+    top: 28.6%;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    padding: 200px;
+    background-color: sienna;
+    position: absolute;
+    padding: 20px;
+    
+}
+.sticky {
+    position: fixed; /* Becomes fixed when scrolled */
+    top: 9.5%; /* Sticks to top */
+}
+
+.radiusBox {
+    width: 350px;
+    height: 30%;
+    background-color: rgb(157, 157, 157);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.upperRadBox {
+    background-color: white;
+    height: 40%;
+    padding: 1px;
+    border-radius: 5px 5px 0 0;
+}
+
+.checkboxes {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    flex-direction: column;
+}

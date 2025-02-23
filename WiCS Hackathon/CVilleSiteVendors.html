@@ -13,12 +13,50 @@
                 <a href="file:///C:/Users/yejun/OneDrive/Desktop/Work%20Stuff/Projects/WiCS%20Hackathon/CVilleSiteEvents.html">Events</a>
             </div>
             <div class="bannerlink">
-                <a href="file:///C:/Users/yejun/OneDrive/Desktop/Work%20Stuff/Projects/WiCS%20Hackathon/CVilleSiteMain.html">Main Menu</a>
+                <a href="file:///C:/Users/yejun/OneDrive/Documents/GitHub/CVilleSite/WiCS%20Hackathon/CVilleSiteMain.html">Main Menu</a>
             </div>
             <div class="bannerlink">
-                <a href="file:///C:/Users/yejun/OneDrive/Desktop/Work%20Stuff/Projects/WiCS%20Hackathon/CVilleSiteVendors.html">Vendors</a>
+                <a href="file:///C:/Users/yejun/OneDrive/Documents/GitHub/CVilleSite/WiCS%20Hackathon/CVilleSiteVendors.html">Vendors</a>
             </div>
         </div>
+
+        <div class="leftSideBar" id="sidebar1"> </div>
+        <div class="rightSideBar" id="sidebar2">
+            <div class="radiusBox">
+                <div class="upperRadBox">
+                    <h1 align="center">Radius</h1>
+                </div>
+                <div>
+                    <p>Scale where you can adjust radius i guess</p>
+                </div>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox"><label>Food</label><br>
+                <input type="checkbox"><label>Art</label><br>
+                <input type="checkbox"><label>Candles</label>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("scroll", function() {
+                let sidebar = document.getElementById("sidebar1");
+                if (window.scrollY > 140) {
+                    sidebar.classList.add("sticky");
+                } else {
+                    sidebar.classList.remove("sticky");
+                }
+            });
+        </script>
+        <script>
+            window.addEventListener("scroll", function() {
+                let sidebar = document.getElementById("sidebar2");
+                if (window.scrollY > 140) {
+                    sidebar.classList.add("sticky");
+                } else {
+                    sidebar.classList.remove("sticky");
+                }
+            });
+        </script>
+
         <div class="catalogue" id="listings">
             <div class="vendorbox"> 
                 <img src="Canes.png" alt="Raising Cane's Pic">
