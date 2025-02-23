@@ -1,6 +1,6 @@
 body { 
     margin: 0;
-    font-family: Garamond;
+    font-family: "Fredoka";
 }   
 
 .bannerlink {
@@ -29,7 +29,7 @@ body {
 }
 
 .top-container {
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 30px 30px;
     text-align: center;
 }
