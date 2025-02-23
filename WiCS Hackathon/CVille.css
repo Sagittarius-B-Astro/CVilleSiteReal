@@ -4,12 +4,28 @@ body {
 }   
 
 .bannerlink {
-    background-color: burlywood;
-    padding: 10px 1px;
+    background-color: #56e7aa;
+    padding: 10px 0px;
     text-align: center;
     width: 33%;
     min-height: 30px;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerlink a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.bannerlink a:hover {
+    color: #333;
+    transform: scale(1.1);
 }
 
 .top-container {
@@ -21,8 +37,8 @@ body {
 .header {
     position: sticky;
     top: 0;
-    padding: 10px 10px;
-    background: #555;
+    padding: 0px 0px;
+    background: #56e7ab;
     color: #f1f1f1;
 }
 
@@ -31,7 +47,7 @@ body {
 }
 
 .catalogue {
-    background-color: bisque;
+    background-color: rgb(238, 238, 238);
     padding: 20px;
     text-align: center;
 }
@@ -48,21 +64,21 @@ body {
 .vendorbox {
     background-color: sienna;
     width: 33%;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0px auto;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
     border-radius: 5px;
+    border: 5px solid black;
 }
 
 img {
     border-radius: 5px;
-    border: 1px solid #ddd;
-    width: 80%;
+    width: 100%;
     display: block;
+    border: 3px solid black;
 }
 
 .venderbox:hover {
@@ -75,13 +91,14 @@ img {
     color: brown;
     text-align: left;
     height: 100px;
-    padding: 5px;
+    padding: 0px;
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .vendortitle {
